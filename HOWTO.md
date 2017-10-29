@@ -101,8 +101,10 @@ Players beat puzzles by beating all of the tests for that puzzle. A test is comp
 
 To add tests to your puzzle, create a 'tests.mtest' file. This will begin with a two-line header:
 
-```PUZZTEST
-0.01```
+```
+PUZZTEST
+0.01
+```
 
 Followed by a series of tests. Tests will appear in-game in the order they appear in the file.
 
