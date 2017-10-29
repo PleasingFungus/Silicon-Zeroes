@@ -34,6 +34,9 @@ Note that saved puzzles, records, and Steam histograms use the internal name, `C
 ```MODULES: Adder, Reader, Instruction Decoder```
 Lists the types of modules that users can place in your puzzle. If you pre-place modules of other types in your puzzle, they will appear grey and users will not be allowed to delete them.
 
+Recognized module types:
+`Number`, `Adder`, `Latch`, `Writer`, `Reader`, `Instruction Decoder`, `Input Selector`, `Output Selector`, `Equals`, `Subtract`, `Op Selector`, `Register`, `Multiplier`
+
 ### Tick Limit
 
 ```TICKS: Five ticks per instruction, plus five more.```
@@ -46,12 +49,6 @@ Modules (Numbers, Input/Output Selectors, Registers) may not be configured in th
 
 ```DELAY```
 Modules take time to stabilize after their inputs change.
-
-```CLOCK```
-A global clock determines how often Writers, Latches, and Registers write their inputs. Should be present whenever those modules are included. Implies DELAY.
-
-```FASTFORWARD```
-The fast-forward button is available. Implies DELAY.
 
 ```AUTOCLOCK```
 The clock is set automatically to allow all modules to stabilize before writing.
@@ -164,6 +161,12 @@ This limit should line up with the 'tick limit description', mentioned above (in
 
 Lines beginning with `#` are treated as comments and ignored.
 
+### More Tests
+
+If you only have one or a few tests, players may be able to exploit this by only producing the outputs those tests expect, rather than solving a broader problem.
+
+Creating large number of tests, perhaps via a script, is sometimes a better approach.
+
 ## Initial Modules
 
 If you want to have puzzles start with some modules pre-placed (perhaps so that players only have a limited number of them available), you'll want to add an `initial.mftsv` file.
@@ -174,4 +177,4 @@ Note that any modules of a type not available for placement in a puzzle are also
 
 ## Document Info
 
-This is version 0.01 of the editing guide. For feedback, please feel free to message pleasingfung@gmail.com with questions, suggestions, etc. Thanks!
+This is version 0.02 of the editing guide. For feedback, please feel free to message pleasingfung@gmail.com with questions, suggestions, etc. Thanks!
