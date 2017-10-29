@@ -1,0 +1,9 @@
+PUZZMETA
+0.01
+NAME: Songhai
+MODULES: Adder, Reader, Writer
+MODULES: Reader, number, amy
+DELAY
+FASTFORWARD
+NO_EDIT
+TICKS: Five per module, plus ten more.
