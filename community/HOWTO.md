@@ -42,6 +42,13 @@ Recognized module types:
 ```TICKS: Five ticks per instruction, plus five more.```
 A description for players of the number of ticks allowed per test. Is NOT enforced mechanically. Generally not recommended for non-delay puzzles, since it tends to be more of a distraction than anything relevant there.
 
+### Module & Tick Goals
+
+To set the 'goals' for a puzzle (optimization targets for players), use this syntax:
+
+`MODULEGOAL: 5`
+`TICKGOAL: 28`
+
 ### Misc. Flags
 
 ```NO_CONFIG```
@@ -138,6 +145,8 @@ Letter values, enclosed in single-quotes. 'A'-'Z' and ' ' are all supported.
 ```9: MSET  1  - 10```
 Instructions, specified as the opcode, the source, the target, and the destination, in that order. '-'s are optional and ignored (the parser only looks for the values used by a specific instruction), but make tests more readable.
 
+Only slots >= 0 are supported. (You can't have, e.g., '-1: 5'.)
+
 ### Expected Memory
 
 To set the expected/goal memory, insert this line after the end of initial memory within a test:
@@ -175,6 +184,10 @@ It's possible to edit such a file manually, but the format is the same as normal
 
 Note that any modules of a type not available for placement in a puzzle are also undeleteable.
 
+## Debugging
+
+If something you set in one of the files isn't going into the game as you expect, try checking the logs for errors. On OS X, the logs are in ~/Documents/SZ_log.txt ; on Windows and Linux, they're in <INSTALLDIR>/log.txt .
+
 ## Document Info
 
-This is version 0.02 of the editing guide. For feedback, please feel free to message pleasingfung@gmail.com with questions, suggestions, etc. Thanks!
+This is version 0.03 of the editing guide. For feedback, please feel free to message pleasingfung@gmail.com with questions, suggestions, etc. Thanks!
