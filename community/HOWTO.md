@@ -12,7 +12,7 @@ To create a puzzle, just make a directory inside community/ with whatever name y
 
 By default, a puzzle's in-game name will be "COMM-foo", where 'foo' is the name of the directory the puzzle is in. If you want to change this, you need a metadata file.
 
-Go into your puzzle's directory and create a new text file, 'metadata.mdata'. At the top, you'll want to add two lines:
+Go into your puzzle's directory and create a new text file, 'metadata.mmeta'. At the top, you'll want to add two lines:
 
 ```METADATA```
 This tells the game this is indeed a metadata file, and not some other misnamed file.
