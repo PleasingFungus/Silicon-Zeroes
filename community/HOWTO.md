@@ -91,7 +91,7 @@ All subsequent text will be displayed in-game as the description.
 
 Two text colors are available.
 
-Text ~surrounded by tildes~ will appear red in-game. In the main campaign, red text is used for mechanical instructions: e.g. ~set each slot to 1~, or ~you cannot configure modules~.
+Text \~surrounded by tildes\~ will appear red in-game. In the main campaign, red text is used for mechanical instructions: e.g. \~set each slot to 1\~, or \~you cannot configure modules\~.
 
 Text \`surrounded by backticks\` will appear green in-game. This is used to emphasize mechanics, concepts, and hints that are not part of the formal ruleset of the puzzle.
 
